@@ -1,0 +1,14 @@
+
+CREATE TABLE  compras (
+    id int (4) PRIMARY KEY ,
+    productos varchar(22)
+    
+    );
+   
+  CREATE table clientes(
+      id int(2) PRIMARY KEY AUTO_INCREMENT ,
+      nombre varchar (22),
+      id_compra int(22),
+      FOREIGN key (id_compra) REFERENCES  compras (id)
+      );
+      
