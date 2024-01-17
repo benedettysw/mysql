@@ -1,0 +1,4 @@
+set @num := 0;
+
+UPDATE publicaciones set id = @num := (@num+1);
+ALTER TABLE publicaciones AUTO_INCREMENT =1;
