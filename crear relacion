@@ -11,4 +11,5 @@ CREATE TABLE  compras (
       id_compra int(22),
       FOREIGN key (id_compra) REFERENCES  compras (id)
       );
+bigint(20)	numeros grandes
       
