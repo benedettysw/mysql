@@ -1,0 +1,24 @@
+CREATE DATABASE recuedox;
+
+use recuedox;
+
+CREATE TABLE usuario(
+    id int PRIMARY key  NOT null,
+    nombre varchar(40)
+);
+
+CREATE TABLE clave(
+    id int PRIMARY key ,
+    clave int not null,
+    idUsuario int,
+    FOREIGN KEY(idUsuario)  REFERENCES  usuario(id)
+    
+    );
+
+CREATE table number3(
+    id int PRIMARY key ,
+    fecha datetime,
+    idClave int ,
+    FOREIGN KEY(idClave)  REFERENCES  clave(id)  
+    
+    );
